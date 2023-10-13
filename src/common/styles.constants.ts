@@ -42,14 +42,13 @@ export const mainStyle = {
 export const mainSubStyle = (theme: Theme) => ({
   alignItems: 'center',
   backgroundColor: theme.palette.primary.light,
+  border: `5px solid ${theme.palette.primary.light}`,
   borderRadius: '6px',
   display: 'flex',
   flexWrap: 'nowrap',
   mt: 2,
-  paddingBottom: 1,
-  paddingLeft: 2,
-  paddingRight: 1,
-  paddingTop: 2,
+  paddingLeft: 1,
+  paddingTop: 1,
   width: '100%',
 });
 
