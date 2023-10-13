@@ -28,13 +28,15 @@ export const mainStyle = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  height: '100vh',
+  my: 2,
+  minHeight: '100vh',
   userSelect: 'none',
 };
 
 export const mainSubStyle = (theme: Theme) => ({
   alignItems: 'center',
   backgroundColor: theme.palette.primary.light,
+  borderRadius: '6px',
   display: 'flex',
   flexWrap: 'nowrap',
   paddingBottom: 1,

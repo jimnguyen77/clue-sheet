@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 
-import { Box, Container, Grid, TextField } from '@mui/material';
+import { Box, Button, Container, Grid, TextField } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 import { NumBoxes, PLAYERS, ROOMS, Titles, WEAPONS } from './common/data.constants';
@@ -66,6 +66,17 @@ const ClueSheet: FC = () => {
             setBoxes={setBoxes}
           />
         </Grid>
+      </Box>
+      <Box sx={{ mt: 2 }}>
+        <Button
+          href='https://github.com/jimnguyen77/clue-sheet'
+          rel='noopener noreferrer'
+          size='small'
+          target='_blank'
+          variant='outlined'
+        >
+          Github
+        </Button>
       </Box>
     </Container>
   );
