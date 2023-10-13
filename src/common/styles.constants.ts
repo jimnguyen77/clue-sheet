@@ -29,6 +29,7 @@ export const mainStyle = {
   flexDirection: 'column',
   justifyContent: 'center',
   height: '100vh',
+  userSelect: 'none',
 };
 
 export const mainSubStyle = (theme: Theme) => ({
