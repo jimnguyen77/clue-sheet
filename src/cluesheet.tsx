@@ -1,9 +1,10 @@
 import { FC, useState } from 'react';
 
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { Box, Button, Container, Grid, TextField } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-import { NumBoxes, PLAYERS, ROOMS, Titles, WEAPONS } from './common/data.constants';
+import { GitHubLink, NumBoxes, PLAYERS, ROOMS, Titles, WEAPONS } from './common/data.constants';
 import Section from './common/section.component';
 import {
   gridBorderStyle,
@@ -67,15 +68,15 @@ const ClueSheet: FC = () => {
           />
         </Grid>
       </Box>
-      <Box sx={{ mt: 2 }}>
+      <Box sx={{ my: 2 }}>
         <Button
-          href='https://github.com/jimnguyen77/clue-sheet'
+          href={GitHubLink}
           rel='noopener noreferrer'
           size='small'
           target='_blank'
           variant='outlined'
         >
-          Github
+          <GitHubIcon sx={{ mr: 1 }} /> Github
         </Button>
       </Box>
     </Container>

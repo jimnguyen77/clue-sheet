@@ -27,3 +27,5 @@ export enum Titles {
   WHERE = 'WHERE?',
   WHO = 'WHO?',
 }
+
+export const GitHubLink = 'https://github.com/jimnguyen77/clue-sheet';

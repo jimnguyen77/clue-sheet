@@ -28,7 +28,6 @@ export const mainStyle = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  my: 2,
   minHeight: '100vh',
   userSelect: 'none',
 };
@@ -39,6 +38,7 @@ export const mainSubStyle = (theme: Theme) => ({
   borderRadius: '6px',
   display: 'flex',
   flexWrap: 'nowrap',
+  mt: 2,
   paddingBottom: 1,
   paddingLeft: 2,
   paddingRight: 1,
