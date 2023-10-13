@@ -1,17 +1,17 @@
-import { FC, Fragment } from 'react';
+import { Fragment } from 'react';
 import { Grid, Theme } from '@mui/material';
 import { CheckMark, NumBoxes } from './data.constants';
 import { gridSectionTitleStyle, gridCheckboxStyle } from './styles.constants';
 
 type RowItemProps = {
-  name: string;
-  theme: Theme;
   boxIndex: number;
   boxes: boolean[][];
+  name: string;
   setBoxes: React.Dispatch<React.SetStateAction<boolean[][]>>;
+  theme: Theme;
 };
 
-const RowItem: FC<RowItemProps> = ({ name, theme, boxIndex, boxes, setBoxes }) => (
+const RowItem = ({ boxIndex, boxes, name, setBoxes, theme }: RowItemProps) => (
   <Fragment>
     <Grid item xs={4} sx={gridSectionTitleStyle(theme)}>
       {name}

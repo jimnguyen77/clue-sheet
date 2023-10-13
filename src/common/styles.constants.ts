@@ -1,5 +1,12 @@
 import { Theme } from '@mui/material/styles';
 
+export const buttonContainerStyle = {
+  my: 2,
+  display: 'flex',
+  justifyContent: 'space-between',
+  width: '100%',
+};
+
 export const gridBorderStyle = (theme: Theme) => ({
   backgroundColor: theme.palette.common.white,
   border: `1px solid ${theme.palette.primary.light}`,

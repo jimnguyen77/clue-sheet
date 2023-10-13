@@ -1,18 +1,18 @@
-import { FC, Fragment } from 'react';
+import { Fragment } from 'react';
 import { Grid, Theme } from '@mui/material';
 import RowItem from './row-item.component';
 import { gridTitleStyle } from './styles.constants';
 
 type SectionProps = {
-  title: string;
-  items: string[];
-  theme: Theme;
-  rowIndex: number;
   boxes: boolean[][];
+  items: string[];
+  rowIndex: number;
   setBoxes: React.Dispatch<React.SetStateAction<boolean[][]>>;
+  theme: Theme;
+  title: string;
 };
 
-const Section: FC<SectionProps> = ({ title, items, theme, rowIndex, boxes, setBoxes }) => (
+const Section = ({ boxes, items, rowIndex, setBoxes, theme, title }: SectionProps) => (
   <Fragment>
     <Grid item xs={12} sx={gridTitleStyle(theme)}>
       {title}
@@ -20,11 +20,11 @@ const Section: FC<SectionProps> = ({ title, items, theme, rowIndex, boxes, setBo
     {items.map((name, index) => (
       <RowItem
         key={name}
-        name={name}
-        theme={theme}
-        boxIndex={rowIndex + index}
         boxes={boxes}
+        boxIndex={rowIndex + index}
+        name={name}
         setBoxes={setBoxes}
+        theme={theme}
       />
     ))}
   </Fragment>
