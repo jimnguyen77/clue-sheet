@@ -23,6 +23,7 @@ export const gridCheckboxStyle = (theme: Theme) => ({
 export const gridSectionTitleStyle = (theme: Theme) => ({
   ...gridBorderStyle(theme),
   paddingTop: '2px !important',
+  whiteSpace: 'nowrap',
 });
 
 export const gridTitleStyle = (theme: Theme) => ({
@@ -34,8 +35,9 @@ export const mainStyle = {
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
+  fontFamily: 'serif',
   justifyContent: 'center',
-  minHeight: '100vh',
+  lineHeight: '1.25',
   userSelect: 'none',
 };
 

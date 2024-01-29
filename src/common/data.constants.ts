@@ -1,5 +1,7 @@
 // change checkmark symbol here
 export const CheckMark = '✓';
+export const QuestionMark = '?';
+export const XMark = '✗';
 
 // change player names here
 export const PLAYERS = ['Green', 'Mustard', 'Orchid', 'Peacock', 'Plum', 'Scarlett'];

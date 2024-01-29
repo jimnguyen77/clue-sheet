@@ -4,10 +4,10 @@ import RowItem from './row-item.component';
 import { gridTitleStyle } from './styles.constants';
 
 type SectionProps = {
-  boxes: boolean[][];
+  boxes: number[][];
   items: string[];
   rowIndex: number;
-  setBoxes: React.Dispatch<React.SetStateAction<boolean[][]>>;
+  setBoxes: React.Dispatch<React.SetStateAction<number[][]>>;
   theme: Theme;
   title: string;
 };
